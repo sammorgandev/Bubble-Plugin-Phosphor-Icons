@@ -13,7 +13,7 @@ function update(instance, properties, context) {
 	if (!existingLink) {
 		var dynamicStyle = properties.type;
 		const linkEl = $('<link rel="stylesheet" type="text/css" />');
-		linkEl.href = `https://unpkg.com/@phosphor-icons/web@2.0.3/src/${dynamicStyle}/style.css`; // this line is still good to have because it's user input and needs to be escaped properly
+		linkEl.href = `https://unpkg.com/@phosphor-icons/web@2.0.3/src/${dynamicStyle}/style.css`;
 		$("head").append(linkEl);
 	}
 
