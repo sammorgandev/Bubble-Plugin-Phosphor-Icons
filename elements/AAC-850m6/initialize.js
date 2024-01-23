@@ -8,8 +8,6 @@ function(instance, context) {
     // Assign a default class
     iconElement.className = "ph-plus-circle"; 
     
-	
-	
     // Append the icon to the instance's DOM element if not already appended
     if (!instance.canvas.find('i').length) {
         instance.canvas.append(iconElement);
