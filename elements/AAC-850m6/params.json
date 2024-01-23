@@ -1,0 +1,89 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "can_fit_width": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 50,
+        "width": 50
+    },
+    "display": "Phosphor Icon",
+    "events": {
+        "AAK": {
+            "caption": "is clicked",
+            "name": "icon_is_clicked"
+        }
+    },
+    "fields": {
+        "AAD": {
+            "caption": "Icon ID",
+            "default_val": "plus-circle",
+            "doc": "Enter the ID for the phosphor icon you want to use. Do not include \"ph-\" as a prefix. This can be dynamic.",
+            "editor": "DynamicValue",
+            "name": "icon_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAE": {
+            "caption": "Color",
+            "default_val": "rgba(0, 0, 0, 1)",
+            "doc": "Select the color of the icon. This can be dynamic.",
+            "editor": "Color",
+            "name": "color",
+            "rank": 1
+        },
+        "AAF": {
+            "caption": "Type",
+            "default_val": "regular",
+            "doc": "Select the type of icon. This can be changed via conditional.",
+            "editor": "Dropdown",
+            "name": "type",
+            "options": "regular,thin,light,bold,fill,duotone",
+            "rank": 2
+        },
+        "AAG": {
+            "caption": "Clickable?",
+            "default_val": false,
+            "doc": "Whether or not the icon should be clickable",
+            "editor": "Checkbox",
+            "name": "clickable",
+            "rank": 3
+        }
+    },
+    "icon": "ion-android-add-circle",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AAH": {
+            "caption": "Color",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "color",
+            "value": "text"
+        },
+        "AAI": {
+            "caption": "Type",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "type",
+            "value": "text"
+        },
+        "AAJ": {
+            "caption": "Icon ID",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "icon_id",
+            "value": "text"
+        }
+    }
+}
