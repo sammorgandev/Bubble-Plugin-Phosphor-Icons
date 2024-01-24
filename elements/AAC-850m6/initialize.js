@@ -1,4 +1,4 @@
-function initialize(instance, context) {
+function (instance, context) {
 	if (instance.data.iconElement) {
 		// Create an <i> tag for the icon
 		var iconElement =
