@@ -5,12 +5,10 @@ function(instance, properties) {
 
  // append the correct stylesheet to the header
    	if (!existingLink) {
-    var dynamicStyle = properties.type; // Replace with the dynamic value as needed
-    var link = document.createElement('link');
-    link.rel = "stylesheet";
-    link.type = "text/css";
-    link.href = 'https://unpkg.com/@phosphor-icons/web@2.0.3/src/' + dynamicStyle + '/style.css';
-    document.head.appendChild(link);
+      var dynamicStyle = properties.type;
+      const linkEl = $('<link rel="stylesheet" type="text/css" />')
+      linkEl.href = `https://unpkg.com/@phosphor-icons/web@2.0.3/src/${dynamicStyle}/style.css`
+      $('head').append(linkEl)    
     }
     
  // Update the class based on the selected icon type and style
