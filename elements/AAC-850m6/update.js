@@ -21,12 +21,10 @@ function(instance, properties, context) {
   	} else {
     root.style.cursor = "inherit";
   	}
-    
- // Update the class based on the selected icon type and style
-    //regular type has a unique class ".ph" instead of ."ph-regular" hence the if statement
-    if (properties.type == 'regular') { iconElement.className = "ph-" + properties.icon_id + " " + "ph" }
-    else { iconElement.className = "ph-" + properties.icon_id + " " + "ph-" + properties.type; }
-
+   
+     const typeClass = properties.type === 'regular' ? 'ph' : `ph-${properties.type}`
+     $(iconElement).addClass([`ph-${properties.icon_id}`, typeClass]) 
+ 
  // Apply additional styles like color and size
     iconElement.style.color = properties.color;
     iconElement.style.fontSize = properties.bubble.width() + "px"; // Assuming the size is in pixels
