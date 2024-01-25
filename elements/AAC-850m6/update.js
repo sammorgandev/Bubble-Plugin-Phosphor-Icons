@@ -17,10 +17,9 @@ function(instance, properties, context) {
     
     if (properties.clickable) {
     root.style.cursor = "pointer";
-    root.addEventListener("click", instance.data.click);
+    root.on("click", instance.data.click);
   	} else {
     root.style.cursor = "inherit";
-    root.removeEventListener("click", instance.data.click);
   	}
     
  // Update the class based on the selected icon type and style
