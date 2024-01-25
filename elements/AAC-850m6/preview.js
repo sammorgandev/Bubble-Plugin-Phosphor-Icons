@@ -11,10 +11,8 @@ function(instance, properties) {
       $('head').append(linkEl)    
     }
     
- // Update the class based on the selected icon type and style
-    //regular type has a unique class ".ph" instead of ."ph-regular" hence the if statement
-    if (properties.type == 'regular') { iconElement.className = "ph-" + properties.icon_id + " " + "ph" }
-    else { iconElement.className = "ph-" + properties.icon_id + " " + "ph-" + properties.type; }
+    const typeClass = properties.type === 'regular' ? 'ph' : `ph-${properties.type}`
+    $(iconElement).addClass([`ph-${properties.icon_id}`, typeClass]) 
 
  // Apply additional styles like color and size
     var iconWidth = properties.bubble.width()
