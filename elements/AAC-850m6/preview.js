@@ -7,7 +7,7 @@ function(instance, properties) {
    	if (!existingLink) {
       var dynamicStyle = properties.type;
       var linkEl = $('<link rel="stylesheet" type="text/css" />')
-      linkEl.href = `https://unpkg.com/@phosphor-icons/web@2.0.3/src/${dynamicStyle}/style.css`
+      linkEl.attr('href', `https://unpkg.com/@phosphor-icons/web@2.0.3/src/${dynamicStyle}/style.css` )
       $('head').append(linkEl)    
     }
     
