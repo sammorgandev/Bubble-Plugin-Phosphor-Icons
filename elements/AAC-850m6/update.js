@@ -17,7 +17,7 @@ function(instance, properties, context) {
     
     if (properties.clickable) {
     root.style.cursor = "pointer";
-    iconElement.on("click", instance.data.click);
+    $(iconElement).on("click", instance.data.click);
   	} else {
     root.style.cursor = "inherit";
   	}
