@@ -6,7 +6,7 @@ function(instance, context) {
     event.stopPropagation();
   	};
     // Assign a default class
-    iconElement.className = "ph-plus-circle"; 
+    iconElement.className = ""; 
     
     // Append the icon to the instance's DOM element if not already appended
     if (!instance.canvas.find('i').length) {
