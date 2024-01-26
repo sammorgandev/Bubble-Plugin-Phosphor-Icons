@@ -23,7 +23,7 @@ function(instance, properties, context) {
   	}
    
      const typeClass = properties.type === 'regular' ? 'ph' : `ph-${properties.type}`
-     $(iconElement).addClass([`ph-${properties.icon_id}`, typeClass]) 
+     $(iconElement).removeClass().addClass([`ph-${properties.icon_id}`, typeClass]) 
  
  // Apply additional styles like color and size
     iconElement.style.color = properties.color;
