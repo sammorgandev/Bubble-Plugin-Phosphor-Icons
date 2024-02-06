@@ -1,4 +1,5 @@
 function(instance, properties) {
+     let root = instance.canvas.get(0);
  // Retrieve the icon element created in the initialize function
   var iconElement = document.createElement("i");
   var existingLink = document.querySelector(`link[href*="@phosphor-icons"][href*="${properties.type}"]`);
@@ -15,12 +16,14 @@ function(instance, properties) {
     $(iconElement).removeClass().addClass([`ph-${properties.icon_id}`, typeClass]) 
 
  // Apply additional styles like color and size
-    var iconWidth = properties.bubble.width()
+
     iconElement.style.color = properties.color;
-    iconElement.style.fontSize = iconWidth + "px";
-    
+    iconElement.style.fontSize = properties.bubble.width() + "px";
+
    
- // Append the element to the canvas for display   
-    instance.canvas.append(iconElement);
+   // Append the icon to the instance's DOM element if not already appended
+    if (!instance.canvas.find('i').length) {
+        instance.canvas.append(iconElement);
+    }
 
 }
