@@ -1,4 +1,14 @@
 {
-    "license": "open_source",
-    "name": "Phosphor Icons"
+    "categories": {
+        "0": "media",
+        "1": "containers",
+        "2": "technical"
+    },
+    "demo_page": "https://phosphor-examples.bubbleapps.io/version-test",
+    "description": "A plugin for implementing phosphor icons",
+    "image": "//meta-q.cdn.bubble.io/f1706295215642x847184832305140400/Phosphor%20Icons%20Logo.png",
+    "license": "private",
+    "link": "https://phosphoricons.com",
+    "name": "Phosphor Icons",
+    "plugin_instructions": "Add the Phosphor Icon element to your page, and set the icon ID, color, and type. "
 }

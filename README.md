@@ -1,6 +1,8 @@
-This is a repository based on the [Bubble](https://bubble.io) plugin 'Phosphor Icons'. 
+This is a repository based on the [Bubble](https://bubble.io) plugin 'Phosphor Icons'.
 
-###Documentation
+**Documentation**
+
+```
 initialize function
 
 instance = {
@@ -12,12 +14,12 @@ instance = {
 context = {
      currentUser: {
          get: function(fieldName: String) - returns the value of a field for the object
-         listProperties: function() - returns an array of the different fields you can access. These fields will include email, logged_in, Slug, Created Date, Modified Date, and _id. 
+         listProperties: function() - returns an array of the different fields you can access. These fields will include email, logged_in, Slug, Created Date, Modified Date, and _id.
      }
      jQuery: main jQuery object
      uploadContent: function(fileName: String, contents: Base64 String, callback: function(err, url), [attachTo])
                     attachTo: optional parameter to attach the file to. It has to be a thing in Bubble
-     async: call context.async with a function that kicks off an asynchronous operation, 
+     async: call context.async with a function that kicks off an asynchronous operation,
          taking a callback taking (err, res). Returns res or else throws error.
      keys: Object with Keys defined in the Plugins Tab
      onCookieOptIn: function(callback: function - runs callback once cookies are allowed (immediately if already accepted)
@@ -96,3 +98,4 @@ properties.bubble = {
      is_visible: function() - returns a Boolean
 }
  This plugin can be used in [Bubble applications](https://bubble.io).
+```
